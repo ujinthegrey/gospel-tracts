@@ -65,17 +65,17 @@ p {
 :root{
  
     /* ------ LIGHT-MODE COLORS------ */
-    --lm-bg-body: #eee;
-    --lm-bg-header: rgba(0, 0, 0, .3);
+    --lm-bg-body: #fff;
+    --lm-bg-header: rgba(0, 0, 0, .4);
     --lm-text: #000;
     --lm-text-accent: #060;
     --lm-link: #00007f;
     --lm-link-hover: #7fff7f;
     
     /* ------ DARK-MODE COLORS ------ */
-    --dm-bg-body: #3f3f46;
-    --dm-bg-header: rgba(85, 85, 85, .8);
-    --dm-text: #a1a1aa;
+    --dm-bg-body: #000;
+    --dm-bg-header: rgba(255, 255, 255, .4);
+    --dm-text: #fff;
     --dm-text-accent: #060;
     --dm-link: #00007f;
     --dm-link-hover: #7fff7f;
@@ -109,15 +109,42 @@ body {
     font-family: system-ui, sans-serif;
     font-size: 1.5rem;
     line-height: 150%;
+}
+
+/* ------ WRAPPER ------ */
+._wrapper {
+    min-width: 100dvw;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+}
+
+/* ------ CONTAINER ------ */
+._container {
     max-width: 75ch;
+    margin: 0 auto;
+    padding-inline: 10px;
+}
+
+/* ------ HEADER ------ */
+header {
+}
+main {
+    flex: 1;
+}
+footer {
 }
 
 /* ------ BANNER  ------ */
 .banner {
     width: 100%;
-    height: 30dvh;
+    height: 25dvh;
     background-color: var(--text);
+}
+
+/* ------ MAIN-TITLE------ */
+.main-title {
+    font-size: 2rem;
+    line-height: 200%;
+    margin-block: 2rem;
 }
