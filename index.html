@@ -4,34 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Евангельские Трактаты</title>
+    <title>Сто Евангельских Трактатов</title>
 </head>
 <body>
-    <div class="_wrapper">
+    <div class="wrapper">
         <header>
-            <div class="_container">
-                <div class="banner"></div>
+            <div class="header__container container">
+                <div class="logo">
+                    <div class="logo__sign first">
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                    </div>
+                    <div class="logo__sign second">
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot "></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                    </div>
+                    <div class="logo__sign third">
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot "></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                    </div>
+                    <div class="logo__sign fourth">
+                        <div class="dot accent"></div>
+                        <div class="dot accent"></div>
+                        <div class="dot accent"></div>
+                        <div class="dot accent"></div>
+                        <div class="dot accent"></div>
+                        <div class="dot accent"></div>
+                        <div class="dot"></div>
+                        <div class="dot accent"></div>
+                        <div class="dot "></div>
+                        <div class="dot accent"></div>
+                    </div>
+                    <div class="logo__sign fifth">
+                        <div class="dot fill"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot fill"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
-            <div class="_container">
-                <h1 class="main-title">СТО ЕВАНГЕЛЬСКИХ ТРАКТАТОВ</h1>
-                <nav>
-                    <h2 class="_hidden-ешеду">Основная навигация</h2>
-                    <ol>
-                        <li><a href="/gospel-tracts/1">#1 Взгляни на вознесенного Христа</a></li>
-                    </ol>
-                    <ol>
-                        <li><a href="/gospel-tracts/2">#2 Иди ко Мне и пей</a></li>
+            <div class="main__container container">
+                <nav class="menu">
+                    <h2 class="_hidden-title">Сто Евангельских Трактатов</h2>
+                    <ol class="menu__list">
+                        <li class="menu__item">
+                            <a href="/gospel-tracts/1" class="menu__link link">#1 Взгляни на вознесенного Христа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/gospel-tracts/2" class="menu__link" link>#2 Иди ко Мне и пей</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/gospel-tracts/3" class="menu__link link">#3 Христос и ковчег</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="1.html" class="menu__link link">#1 Взгляни на вознесенного Христа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="2.html" class="menu__link link">#2 Иди ко Мне и пей</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="3.htm;" class="menu__link link">#3 Христос и ковчег</a>
+                        </li>
                     </ol>
                 </nav>
             </div>
         </main>
         <footer>
-            <div class="_container">
-                <span>&#169; Eugene Koshelev</span>
+            <div class="footer__container container">
+                <span class="footer__copy">
+                    &#169;
+                    <span class="year"></span>    
+                    Eugene Koshelev
+                </span>
             </div>
         </footer>
     </div>
 </body>
+<script>
+    document.querySelector('.year').innerHTML = new Date().getFullYear().toString()
+</script>
 </html>
