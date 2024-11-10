@@ -1,0 +1,40 @@
+/* ------ LOGO  ------ */
+:root {
+    --square: 6px;
+}
+@media (min-width: 767px) {
+    :root {
+        --square: 8px;
+    }
+}
+@media (min-width: 1200px) {
+    :root {
+        --square: 10px;
+    }
+}
+
+.logo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2rem;
+    gap: 1rem;
+}
+.logo-line {
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--square)*5);
+    width: fit-content;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.logo-line > .square {
+    width: var(--square);
+    height: var(--square);
+}
+.logo-line > .fill {
+    background-color: var(--text);
+}
+.logo-line > .accent {
+    background-color: var(--text-accent);
+}

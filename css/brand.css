@@ -3,12 +3,12 @@
     --dot: 8px;
 }
 
-.logo__container{
+.brand__container{
     display: flex;
     justify-content: center;
     padding-block: 6rem;
 }
-.logo {
+.brand {
     display: flex;
     height: calc(var(--dot)*5);
     width: calc(var(--dot)*16);
@@ -16,13 +16,13 @@
     flex-wrap: wrap;
     overflow: hidden;
 }
-.dot {
+.brand > .dot {
     width: var(--dot);
     height: var(--dot);
 }
-.fill {
+.brand > .fill {
     background-color: var(--text);
 }
-.accent {
+.brand > .accent {
     background-color: var(--text-accent);
 }

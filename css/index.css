@@ -165,9 +165,10 @@ body {
 .menu__list {
 }
 .menu__item {
+    padding-block: 1rem;
 }
 .menu__link {
-    line-height: 200%;
+    line-height: 100%;
 }
 
 
