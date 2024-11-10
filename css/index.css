@@ -1,4 +1,4 @@
-/*------ ZEROING from https://github.com/Lazzzer00/Best-CSS-Reset-2024/blob/main/css_reset.css ------*/
+/*------ ZEROING ------*/
 
 *, *::before, *::after{
     box-sizing: border-box; 
@@ -13,11 +13,7 @@ ul, ol{
     list-style: none; 
 }
 
-html:focus-within{
-    scroll-behavior: smooth; 
-}
-
-a:not([class]){
+a {
     text-decoration-skip-ink: auto; 
 }
 
@@ -30,35 +26,19 @@ img, picture, svg, video, canvas{
     background-size: cover;
 }
 
-input, button, textarea, select{
-    font: inherit; 
-}
-
-@media (prefers-reduced-motion: reduce){
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-        transition: none;
-    }
-}
-
 body, html{
     height: 100%; 
-    scroll-behavior: smooth; 
 }
 
-/* ------ HEADERS & PARAGRAPHS WRAPPING ------ */
+/* ------ HEADERS & PARAGRAPHS ------ */
 h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 600;
+    line-height: 125%;
     text-wrap: balance;
 }
 p {
     text-wrap: pretty;
-    margin-bottom: 2rem;
 }
 
 /* ------ COLOR SCHEME ------ */
@@ -129,12 +109,6 @@ body {
     overflow: hidden;
     z-index: -1000;
 }
-.main__title {
-    font-size: 2rem;
-    line-height: 200%;
-    margin-block: 2rem;
-    text-align: center;
-}
 
 /* ------ LINKS ------ */
 .link {
@@ -160,8 +134,6 @@ body {
 }
 .menu {
 }
-._hidden-title {
-}
 .menu__list {
 }
 .menu__item {
@@ -170,7 +142,6 @@ body {
 .menu__link {
     line-height: 100%;
 }
-
 
 /* ------ FOOTER ------ */
 .footer__container {

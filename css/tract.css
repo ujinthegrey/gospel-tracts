@@ -1,0 +1,19 @@
+/* ------ TITLES ------ */
+.primary-title {
+    font-size: 2rem;
+    margin-block: 2rem;
+    text-align: center;
+    color: var(--text-accent);
+}
+.secondary-title {
+    font-size: 1.75rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: var(--text-accent);
+}
+
+/* ------ PARAGRAPHS ------ */
+p {
+    margin-block: 2rem;
+    word-spacing: .25rem;
+}
