@@ -26,6 +26,17 @@ img, picture, svg, video, canvas{
     background-size: cover;
 }
 
+
+/* ------ SMOOTH-ANCHOR-LINKS ------ */
+html {
+	scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body, html{
     height: 100%; 
 }
@@ -70,8 +81,6 @@ p {
         --bg-header: var(--dm-bg-header);
         --text: var(--dm-text);
         --text-accent: var(--dm-text-accent);
-        --link: var(--dm-link);
-        --link-hover: var(--dm-link-hover);
         color-scheme: dark;
     }
 }
