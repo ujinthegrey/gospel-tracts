@@ -2,6 +2,26 @@
 :root {
     --dot: 8px;
 }
+@media (min-width: 767px) {
+    :root {
+        --dot: 8px;
+    }
+}
+@media (min-width: 1200px) {
+    :root {
+        --dot: 10px;
+    }
+}
+@media (min-width: 1600px) {
+    :root {
+        --dot: 12px;
+    }
+}
+@media (min-width: 2400px) {
+    :root {
+        --dot: 14px;
+    }
+}
 
 .brand__container{
     display: flex;

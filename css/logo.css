@@ -12,6 +12,16 @@
         --square: 10px;
     }
 }
+@media (min-width: 1600px) {
+    :root {
+        --square: 14px;
+    }
+}
+@media (min-width: 2400px) {
+    :root {
+        --square: 20px;
+    }
+}
 
 .logo__container{
     display: flex;
@@ -31,10 +41,17 @@
 .logo-line > .square {
     width: var(--square);
     height: var(--square);
+    animation: logoApearing 3s ease-in-out 1 forwards;
 }
 .logo-line > .fill {
     background-color: var(--text);
 }
 .logo-line > .accent {
     background-color: var(--text-accent);
+}
+
+@keyframes logoApearing {
+    0% {
+        background-color: transparent;
+    }
 }

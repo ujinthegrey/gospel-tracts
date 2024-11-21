@@ -44,8 +44,7 @@ body, html{
 /* ------ HEADERS & PARAGRAPHS ------ */
 h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
-    font-weight: 600;
-    line-height: 125%;
+    font-weight: inherit;
     text-wrap: balance;
 }
 p {
@@ -57,13 +56,13 @@ p {
  
     /* ------ LIGHT-MODE COLORS------ */
     --lm-bg-body: #fff;
-    --lm-bg-header: rgba(0, 0, 0, .4);
+    --lm-bg-header: rgba(255, 255, 255, .1);
     --lm-text: #110;
     --lm-text-accent: #080;
     
     /* ------ DARK-MODE COLORS ------ */
     --dm-bg-body: #000;
-    --dm-bg-header: rgba(255, 255, 255, .4);
+    --dm-bg-header: rgba(255, 255, 255, .1);
     --dm-text: #ffe;
     --dm-text-accent: #7fff7f;
 
@@ -92,6 +91,16 @@ body {
     font-family: system-ui, sans-serif;
     font-size: 1.5rem;
     line-height: 150%;
+}
+@media (min-width: 1600px) {
+    body {
+        font-size: 1.75rem;
+    }
+}
+@media (min-width: 2400px) {
+    body {
+        font-size: 2rem;
+    }
 }
 
 /* ------ WRAPPER ------ */
@@ -125,8 +134,10 @@ body {
     color: var(--text);
     transition: color .2s ease;
 }
-.link:hover {
+.link:hover,
+.link:focus {
     color: var(--text-accent);
+    border: none;
 }
 
 /* ------- HEADER ------ */

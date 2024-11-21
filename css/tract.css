@@ -1,19 +1,38 @@
+/* ------ HEADER ------ */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-header);
+    z-index: 50;
+}
+.header__container {
+    padding-block: .5rem;
+    backdrop-filter: blur(10px);
+}
+main {
+    padding-top: 3rem;
+}
+
 /* ------ TITLES ------ */
 .primary-title {
-    font-size: 2rem;
+    font-size: 150%;
+    font-weight: 700;
     margin-block: 2rem;
     text-align: center;
     color: var(--text-accent);
 }
 .secondary-title {
-    font-size: 1.75rem;
+    font-size: 125%;
+    font-weight: 700;
     margin-block: 4rem;
     color: var(--text-accent);
 }
 .content-title {
     font-size: unset;
     font-weight: unset;
-    line-height: 200%;
+    margin-block: 1rem;
 }
 
 /* ------ PARAGRAPHS ------ */
