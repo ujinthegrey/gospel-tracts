@@ -130,7 +130,6 @@ body {
 
 /* ------ LINKS ------ */
 .link {
-    line-height: 200%;
     color: var(--text);
     transition: color .2s ease;
 }
