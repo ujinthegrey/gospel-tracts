@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     padding-block: 2rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 .logo-line {
     display: flex;
@@ -41,17 +41,19 @@
 .logo-line > .square {
     width: var(--square);
     height: var(--square);
-    animation: logoApearing 3s ease-in-out 1 forwards;
+    animation: logoApearing .5s ease-in-out 1 forwards;
 }
 .logo-line > .fill {
     background-color: var(--text);
+    transform: translateY(calc(var(--square)*5));
 }
 .logo-line > .accent {
     background-color: var(--text-accent);
+    transform: translateY(calc(var(--square)*(-5)));
 }
 
 @keyframes logoApearing {
-    0% {
-        background-color: transparent;
+    100% {
+        transform: translateY(0);
     }
 }

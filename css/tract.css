@@ -9,18 +9,23 @@
     right: 0;
     height: var(--header-height);
     background-color: var(--bg-header);
+    /* background: linear-gradient(0.25turn, #fff, #000); */
+    background-repeat: no-repeat;
     backdrop-filter: blur(10px);
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 50;
+    padding: 0;
+    margin: 0;
 }
 .header__container {
 }
-main {
-    padding-top: var(--header-height);
-}
 .fixed-header > meter {
+    display: block;
     width: 100%;
     height: 1rem;
+}
+main {
+    padding-top: var(--header-height);
 }
 
 /* ------ TITLES ------ */
