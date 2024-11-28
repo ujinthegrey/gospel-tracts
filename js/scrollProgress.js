@@ -1,4 +1,3 @@
 document.addEventListener("scroll", () => {
-    document.getElementById('meter').setAttribute('value', (document.documentElement.scrollTop / document.documentElement.scrollHeight) * 107)
+    document.querySelector('.scroll-progress').style.setProperty("width", ((document.documentElement.scrollTop / document.documentElement.scrollHeight) * 106).toString() + "%")
 })
-
