@@ -21,10 +21,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: var(--header-height);
     background-color: rgba(0, 255, 0, .2);
     z-index: -10;
 }
+.header__container {
+    height: var(--header-height);
+}
+
+
 main {
     padding-top: var(--header-height);
 }
