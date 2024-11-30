@@ -1,6 +1,6 @@
 /* ------ HEADER ------ */
 :root {
-    --header-height: 3rem;
+    --header-height: 2.5rem;
 }
 .fixed-header {
     position: fixed;
@@ -46,6 +46,11 @@ main {
 .content-title {
     font-size: unset;
     font-weight: unset;
+    margin-block: 1rem;
+}
+
+/* ------ CONTAIN LINKS ------- */
+.content-list > li {
     margin-block: 1rem;
 }
 
