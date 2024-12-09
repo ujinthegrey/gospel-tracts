@@ -30,7 +30,7 @@
     padding-block: 2rem;
     gap: 1rem;
 }
-.logo-line {
+.logo__line {
     display: flex;
     flex-direction: column;
     height: calc(var(--square)*5);
@@ -38,16 +38,16 @@
     flex-wrap: wrap;
     overflow: hidden;
 }
-.logo-line > .square {
+.logo__square {
     width: var(--square);
     height: var(--square);
-    animation: logoApearing .5s ease-in-out 1 forwards;
+    animation: logoApearing .6s ease-in-out 1 forwards;
 }
-.logo-line > .fill {
+.logo__square--fill {
     background-color: var(--text);
     transform: translateY(calc(var(--square)*5));
 }
-.logo-line > .accent {
+.logo__square--accent {
     background-color: var(--text-accent);
     transform: translateY(calc(var(--square)*(-5)));
 }

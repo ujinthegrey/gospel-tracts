@@ -109,7 +109,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.wrapper > main {
+.wrapper > .main {
 	flex-grow: 1;
 }
 
@@ -121,7 +121,7 @@ body {
 }
 
 /* ------ TITLES ------ */
-._hidden-title {
+.hidden-title {
     width: 0;
     height: 0;
     overflow: hidden;
@@ -131,7 +131,7 @@ body {
 /* ------ LINKS ------ */
 .link {
     color: var(--text);
-    transition: color .2s ease;
+    transition: color .3s ease;
 }
 .link:hover,
 .link:focus {
