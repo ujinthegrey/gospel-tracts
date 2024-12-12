@@ -28,21 +28,39 @@
     justify-content: center;
     padding-block: 6rem;
 }
-.brand {
-    display: flex;
+.brand__line {
     height: calc(var(--dot)*5);
     width: calc(var(--dot)*16);
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
+    animation: shake-brand 42s ease-in-out infinite;
 }
-.brand > .dot {
+.brand__dot {
     width: var(--dot);
     height: var(--dot);
 }
-.brand > .fill {
+.brand__dot--fill {
     background-color: var(--text);
 }
-.brand > .accent {
+.brand__dot--accent {
     background-color: var(--text-accent);
+}
+@keyframes shake-brand {
+    0%, 99.5%, 100% {
+        transform: translate(0);
+    }
+    99.6% {
+        transform: translate(40px);
+    }
+    99.7% {
+        transform: translate(-20px);
+    }
+    99.8% {
+        transform: translate(10px);
+    }
+    99.9% {
+        transform: translate(-5px);
+    }    
 }

@@ -1,6 +1,6 @@
 /* ------ HEADER ------ */
 :root {
-    --header-height: 2.5rem;
+    --header-height: 3rem;
 }
 .header--fixed {
     position: fixed;
@@ -29,11 +29,17 @@
     line-height: var(--header-height);
 }
 
+/* ------ SPACING FOR HEADER HEIGHT ------ */
 .main {
     padding-top: var(--header-height);
 }
 
 /* ------ TITLES ------ */
+.title--content {
+    font-size: unset;
+    font-weight: unset;
+    margin-block: 1rem;
+}
 .title--primary {
     font-size: 150%;
     font-weight: 700;
@@ -47,14 +53,9 @@
     padding-block: calc(var(--header-height) + 1rem);
     color: var(--text-accent);
 }
-.title--content {
-    font-size: unset;
-    font-weight: unset;
-    margin-block: 1rem;
-}
 
 /* ------ CONTENT LINKS ------- */
-.content-list > li {
+.content__item {
     margin-block: 1rem;
 }
 
@@ -62,4 +63,19 @@
 p {
     margin-block: 2rem;
     word-spacing: .25rem;
+}
+
+/* ------ TRACT ------ */
+.tract__info {
+    margin-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ------ AUDIO ------ */
+.tract__audio {
+    width: 100%;
+    border-radius: 0;
 }
