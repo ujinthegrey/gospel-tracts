@@ -18,7 +18,8 @@
     top: 0;
     left: 0;
     height: var(--header-height);
-    background-color: rgba(0, 255, 0, .2);
+    background-color: var(--text-accent);
+    opacity: .2;
     z-index: -10;
 }
 .header__container {
