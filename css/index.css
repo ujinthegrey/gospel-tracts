@@ -141,7 +141,6 @@ body {
 .link:hover,
 .link:focus {
     color: var(--text-accent);
-    border: none;
 }
 
 /* ------- HEADER ------ */
@@ -164,12 +163,11 @@ body {
     padding-block: 1rem;
 }
 .menu__link {
-    line-height: 100%;
 }
 
 /* ------ FOOTER ------ */
 .footer__container {
-    margin-block: 6rem;
+    margin-block: 4rem;
     align-items: center;
     text-align: center;
 }
