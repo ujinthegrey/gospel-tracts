@@ -47,6 +47,7 @@
     margin-block: 2rem;
     text-align: center;
     color: var(--text-accent);
+    line-height: 120%;
 }
 .title--secondary {
     font-size: 125%;
@@ -78,5 +79,4 @@ p {
 /* ------ AUDIO ------ */
 .tract__audio {
     width: 100%;
-    border-radius: 0;
 }
