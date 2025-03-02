@@ -57,14 +57,14 @@ p {
     /* ------ LIGHT-MODE COLORS------ */
     --lm-bg-body: #fff;
     --lm-bg-header: rgba(255, 255, 255, .1);
-    --lm-text: #110;
-    --lm-text-accent: #080;
+    --lm-text: #222;
+    --lm-text-accent: #282;
     
     /* ------ DARK-MODE COLORS ------ */
     --dm-bg-body: #000;
     --dm-bg-header: rgba(255, 255, 255, .1);
-    --dm-text: #ffe;
-    --dm-text-accent: #7fff7f;
+    --dm-text: #ddd;
+    --dm-text-accent: #7d7;
 
     /* ------ DEFAULT ------ */
     --bg-body: var(--lm-bg-body);
