@@ -17,6 +17,11 @@ a {
     text-decoration-skip-ink: auto; 
 }
 
+button {
+    border: none;
+    box-shadow: none;
+}
+
 img, picture, svg, video, canvas{
     max-width: 100%;
     height: auto; 
@@ -57,14 +62,14 @@ p {
     /* ------ LIGHT-MODE COLORS------ */
     --lm-bg-body: #fff;
     --lm-bg-header: rgba(255, 255, 255, .1);
-    --lm-text: #222;
+    --lm-text: #111;
     --lm-text-accent: #282;
     
     /* ------ DARK-MODE COLORS ------ */
     --dm-bg-body: #000;
     --dm-bg-header: rgba(255, 255, 255, .1);
-    --dm-text: #ddd;
-    --dm-text-accent: #7d7;
+    --dm-text: #eee;
+    --dm-text-accent: #6d6;
 
     /* ------ DEFAULT ------ */
     --bg-body: var(--lm-bg-body);
@@ -132,14 +137,20 @@ body {
     z-index: -1000;
 }
 
-/* ------ LINKS ------ */
-.link {
+/* ------ LINKS & BUTTONS------ */
+.link,
+.btn {
     color: var(--text);
     transition: color .3s ease;
 }
 .link:hover,
-.link:focus {
+.link:focus,
+.btn:hover,
+.btn:focus {
     color: var(--text-accent);
+}
+.btn {
+    cursor: pointer;
 }
 
 /* ------- HEADER ------ */

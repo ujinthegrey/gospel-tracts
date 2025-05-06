@@ -1,0 +1,82 @@
+/* ------ ROOT  ------ */
+:root {
+    --dot: 6px;
+}
+@media (min-width: 767px) {
+    :root {
+        --dot: 8px;
+    }
+}
+@media (min-width: 1200px) {
+    :root {
+        --dot: 10px;
+    }
+}
+@media (min-width: 1600px) {
+    :root {
+        --dot: 12px;
+    }
+}
+@media (min-width: 2400px) {
+    :root {
+        --dot: 14px;
+    }
+}
+
+/* ------ COLORS ------ */
+.dot {
+    width: var(--dot);
+    height: var(--dot);
+}
+.dot--fill {
+    background-color: var(--text);
+}
+.dot--accent {
+    background-color: var(--text-accent);
+}
+
+/* ------ LOGO ------ */
+.logo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2rem;
+    gap: 1rem;
+}
+.logo__line {
+    display: flex;
+    flex-direction: column;
+    height: calc(var(--dot)*5);
+    width: fit-content;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.logo__line > .dot {
+    animation: logoApearing .6s ease-in-out 1 forwards;
+}
+.logo__line > .dot--fill {
+    transform: translateY(calc(var(--dot)*5));
+}
+.logo__line > .dot--accent {
+    transform: translateY(calc(var(--dot)*(-5)));
+}
+@keyframes logoApearing {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ------ BRAND ------ */
+.brand__container{
+    display: flex;
+    justify-content: center;
+    padding-block: 6rem;
+}
+.brand__line {
+    height: calc(var(--dot)*5);
+    width: calc(var(--dot)*16);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}

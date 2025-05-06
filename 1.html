@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/tract.css">
-    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/dot-art.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -15,15 +15,27 @@
 <body>
     <div class="wrapper">
         <header class="header header--fixed">
-            <div class="header__scroll-progress"></div>
+            <audio id="audio" src="./audio/1.mp3" preload="metadata" type="audio/mpeg"></audio>
+            <div id="progress-bar" class="header__scroll-progress"></div>
             <div class="header__container container">
-                <a href="/gospel-tracts/" class="header__link link">&larr; назад</a>
+                <nav id="nav" class="header__nav">
+                    <ul class="header__list">
+                        <li><a href="/gospel-tracts/" class="header__link link">&#8592;назад</a></li>
+                        <li><buton id="show-player" class="header__button btn">слушать &#9834;</buton></li>
+                    </ul>               
+                </nav>
+                <div id="player" class="header__player player" hidden>
+                    <button id="step" class="player__btn">10"</button>        
+                    <button id="backwards" class="player__btn">&#8630;</button>
+                    <button id="play-pause" class="player__btn">&#9658;</button>
+                    <button id="forewards"class="player__btn">&#8631;</button>
+                    <button id="playspeed"class="player__btn">1.0</button>                
+                </div>
             </div>
         </header>
         <article class="main tract">
             <div class="tract__container container">
                 <h1 class="tract__title title title--primary">#1 Взгляни на вознесенного Христа (Иоанна 3:14–15)</h1>
-                <audio class="tract__audio" src="./audio/1.mp3" controls preload="metadata" type="audio/opus"></audio>
                 <nav class="tract__content content">
                     <h2 class="content__title title title--content">Содержание:</h2>
                     <ol class="content-list">
@@ -197,99 +209,99 @@
         <footer class="brand">
             <div class="brand__container container">
                 <div class="brand__line">
-
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot "></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-
-                    <div class="brand__dot brand__dot--accent"></div>
-                    <div class="brand__dot brand__dot--accent"></div>
-                    <div class="brand__dot brand__dot--accent"></div>
-                    <div class="brand__dot brand__dot--accent"></div>
-                    <div class="brand__dot brand__dot--accent"></div>
-                    <div class="brand__dot brand__dot--accent"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot brand__dot--accent"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot brand__dot--accent"></div>
                     
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot brand__dot--fill"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
-                    <div class="brand__dot"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    
+                    <div class="dot dot--accent"></div>
+                    <div class="dot dot--accent"></div>
+                    <div class="dot dot--accent"></div>
+                    <div class="dot dot--accent"></div>
+                    <div class="dot dot--accent"></div>
+                    <div class="dot dot--accent"></div>
+                    <div class="dot"></div>
+                    <div class="dot dot--accent"></div>
+                    <div class="dot"></div>
+                    <div class="dot dot--accent"></div>
+                    
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    
+                    <div class="dot dot--fill"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot dot--fill"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
                 </div>
             </div>
         </footer>
     </div>
-    <script src="./js/scrollProgress.js" type="module"></script>
+    <script src="./js/tract.js" type="module"></script>
 </body>
 </html>

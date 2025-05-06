@@ -24,10 +24,60 @@
 }
 .header__container {
     height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
-.header__link {
+
+/* ------ HEADER NAV ------ */
+.header__nav {
+    position: absolute;
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    transition: transform .3s;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.hide {
+    transform: translateY(-400%);
+}
+
+/* ----- HEADER PLAYER ------ */
+.player {
+    transform: translateY(-400%);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: transform .3s .3s;
+}
+.player__btn {
     display: block;
-    line-height: var(--header-height);
+    border: 2px solid inherit;
+    border-radius: 50%;
+    background-color: transparent;
+    height: var(--header-height);
+    width: var(--header-height);
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.player__btn:hover,
+.player__btn:focus {
+    color: var(--text-accent);
+    border: 2px solid var(--text-accent);
+}
+.show {
+    transform: translateY(0);
 }
 
 /* ------ SPACING FOR HEADER HEIGHT ------ */
@@ -75,9 +125,4 @@ p {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-/* ------ AUDIO ------ */
-.tract__audio {
-    width: 100%;
 }
