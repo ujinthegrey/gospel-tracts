@@ -52,32 +52,38 @@
 
 /* ----- HEADER PLAYER ------ */
 .player {
-    transform: translateY(-400%);
     height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    transition: transform .3s .3s;
 }
 .player__btn {
     display: block;
-    border: 2px solid inherit;
-    border-radius: 50%;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
     height: var(--header-height);
     width: var(--header-height);
     cursor: pointer;
     font-size: 1.5rem;
     line-height: 1;
+    color: var(--text);
+    background-size: cover;
+    background-repeat: repeat;
 }
-.player__btn:hover,
-.player__btn:focus {
-    color: var(--text-accent);
-    border: 2px solid var(--text-accent);
+.player__btn:hover {
+    opacity: 0.8;
 }
-.show {
-    transform: translateY(0);
+.play-pause_btn {
+    background-image: var(--play);
+}
+.play-pause_btn.paused {
+    background-image: var(--pause);
+}
+.backwards_btn {
+    background-image: var(--backwards);
+}
+.forewards_btn {
+    background-image: var(--forwards);
 }
 
 /* ------ SPACING FOR HEADER HEIGHT ------ */

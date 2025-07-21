@@ -18,18 +18,12 @@
             <audio id="audio" src="./audio/1.mp3" preload="metadata" type="audio/mpeg"></audio>
             <div id="progress-bar" class="header__scroll-progress"></div>
             <div class="header__container container">
-                <nav id="nav" class="header__nav">
-                    <ul class="header__list">
-                        <li><a href="/gospel-tracts/" class="header__link link">&#8592;назад</a></li>
-                        <li><buton id="show-player" class="header__button btn">слушать &#9834;</buton></li>
-                    </ul>               
-                </nav>
-                <div id="player" class="header__player player" hidden>
+                <div id="player" class="header__player player">
                     <button id="step" class="player__btn">10"</button>        
-                    <button id="backwards" class="player__btn">&#8630;</button>
-                    <button id="play-pause" class="player__btn">&#9658;</button>
-                    <button id="forewards"class="player__btn">&#8631;</button>
-                    <button id="playspeed"class="player__btn">1.0</button>                
+                    <button id="backwards" class="player__btn backwards_btn"></button>
+                    <button id="play-pause" class="player__btn play-pause_btn"></button>
+                    <button id="forewards"class="player__btn forewards_btn"></button>
+                    <button id="playspeed"class="player__btn">x1</button>                
                 </div>
             </div>
         </header>
@@ -302,6 +296,6 @@
             </div>
         </footer>
     </div>
-    <script src="./js/tract.js" type="module"></script>
+    <script src="./js/player.js" type="module"></script>
 </body>
 </html>

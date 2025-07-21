@@ -31,7 +31,6 @@ img, picture, svg, video, canvas{
     background-size: cover;
 }
 
-
 /* ------ SMOOTH-ANCHOR-LINKS ------ */
 html {
 	scroll-behavior: smooth;
@@ -65,11 +64,23 @@ p {
     --lm-text: #111;
     --lm-text-accent: #282;
     
+        /* ------ PLAYER BUTTONS ------ */
+        --lm-play: url("../img/play.png");
+        --lm-pause: url("../img/pause.png");
+        --lm-backwards: url("../img/backwards.png");
+        --lm-forwards: url("../img/forwards.png");
+    
     /* ------ DARK-MODE COLORS ------ */
     --dm-bg-body: #000;
     --dm-bg-header: rgba(255, 255, 255, .1);
     --dm-text: #eee;
     --dm-text-accent: #6d6;
+
+        /* ------ PLAYER BUTTONS ------ */
+        --dm-play: url("../img/dm-play.png");
+        --dm-pause: url("../img/dm-pause.png");
+        --dm-backwards: url("../img/dm-backwards.png");
+        --dm-forwards: url("../img/dm-forwards.png");
 
     /* ------ DEFAULT ------ */
     --bg-body: var(--lm-bg-body);
@@ -77,6 +88,11 @@ p {
     --text: var(--lm-text);
     --text-accent: var(--lm-text-accent);
 
+        /* ------ PLAYER BUTTONS ------ */
+        --play: var(--lm-play);
+        --pause: var(--lm-pause);
+        --backwards: var(--lm-backwards);
+        --forwards: var(--lm-forwards);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -85,6 +101,13 @@ p {
         --bg-header: var(--dm-bg-header);
         --text: var(--dm-text);
         --text-accent: var(--dm-text-accent);
+
+            /* ------ PLAYER BUTTONS ------ */
+            --play: var(--dm-play);
+            --pause: var(--dm-pause);
+            --backwards: var(--dm-backwards);
+            --forwards: var(--dm-forwards);
+
         color-scheme: dark;
     }
 }
