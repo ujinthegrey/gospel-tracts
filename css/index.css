@@ -167,9 +167,7 @@ body {
     transition: color .3s ease;
 }
 .link:hover,
-.link:focus,
-.btn:hover,
-.btn:focus {
+.btn:hover {
     color: var(--text-accent);
 }
 .btn {
