@@ -1,7 +1,7 @@
 var TRACKS = [
     "./audio/prologue.mp3",
 ]
-var STEP = [10, 60, 300]
+var STEP = [10, 60, 300, 600]
 var SPEED = [1, 1.2, 1.5, 1.7, 2]
 var state = {
     "playing" : false,

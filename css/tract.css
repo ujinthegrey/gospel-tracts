@@ -74,6 +74,7 @@
     opacity: 0.8;
 }
 .play-pause_btn {
+    background-image: var(--pause);
     background-image: var(--play);
 }
 .play-pause_btn.paused {
