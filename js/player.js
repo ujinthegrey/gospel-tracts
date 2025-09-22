@@ -1,7 +1,7 @@
 var TRACKS = [
     "./audio/prologue.mp3",
 ]
-var STEP = [10, 60, 300, 600]
+var STEP = [10, 60, 300]
 var SPEED = [1, 1.2, 1.5, 1.7, 2]
 var state = {
     "playing" : false,
@@ -17,10 +17,6 @@ var audio = document.getElementById('audio')
 function loadState() {
     stepBtn.innerHTML = Object.keys(STEP).find(k => STEP[k] === step)
 }
-/* function loadTrack() {
-    audio.setAttribute("src", TRACKS[state.currentTrack])
-}
-loadTrack() */
 
 /* ELEMENTS AND CONTROL BUTTONS */
 var progressBar = document.getElementById('progress-bar')
@@ -53,19 +49,17 @@ speedBtn.addEventListener('click', () => {
     changeSpeed()
 })
 audio.addEventListener('timeupdate', updateAudioProgress)
-audio.addEventListener('ended', endTract())
+audio.addEventListener('ended', endTract)
 
 /* FUNCTIONS */
 function play() {
     state.playing = true
     audio.play()
-    /* playPauseBtn.innerHTML = "&#10074;&#10074;" */
     playPauseBtn.classList.add('paused')   
 }
 function pause() {
     state.playing = false
     audio.pause()
-    /* playPauseBtn.innerHTML = "&#9658;"  */     
     playPauseBtn.classList.remove('paused') 
 }
 function changeStep() {
@@ -113,8 +107,8 @@ function updateAudioProgress(e) {
     progressBar.style.width = `${progressPercent}%`
 }
 function endTract() {
-    console.log("ENDED!");    
-    /* playPauseBtn.innerHTML = "&#9658;" */
+    audio.currentTime = 0
+    state.playing = false      
     playPauseBtn.classList.remove('paused') 
 }
 
