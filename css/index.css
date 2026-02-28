@@ -59,10 +59,10 @@ p {
 :root{
  
     /* ------ LIGHT-MODE COLORS------ */
-    --lm-bg-body: #fff;
+    --lm-bg-body: #eee;
     --lm-bg-header: rgba(255, 255, 255, .1);
-    --lm-text: #111;
-    --lm-text-accent: #282;
+    --lm-text: #222;
+    --lm-text-accent: #080;
     
         /* ------ PLAYER BUTTONS ------ */
         --lm-play: url("../img/play.png");
@@ -71,10 +71,10 @@ p {
         --lm-forwards: url("../img/forwards.png");
     
     /* ------ DARK-MODE COLORS ------ */
-    --dm-bg-body: #000;
+    --dm-bg-body: #2222;
     --dm-bg-header: rgba(255, 255, 255, .1);
-    --dm-text: #eee;
-    --dm-text-accent: #6d6;
+    --dm-text: #ddd;
+    --dm-text-accent: #7d7;
 
         /* ------ PLAYER BUTTONS ------ */
         --dm-play: url("../img/dm-play.png");
